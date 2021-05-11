@@ -1,0 +1,17 @@
+<article class="read-more">
+  <div class="[ wrapper ] [ flow ]">
+    <div>
+      <h2>Read this next</h2>
+      <hr />
+    </div>
+
+    <div class="smol-css-grid">
+      {% for item in postListItems %}
+        <a href={{ item.url }} class="[ read-more-post ] [ flow ]">
+          <h4>{{ item.data.title }}</h4>
+          <p class="read-more-post__author">By: {{ item.data.author }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</article>

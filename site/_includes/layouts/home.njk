@@ -1,0 +1,31 @@
+{% extends 'layouts/base.njk' %}
+
+{% set introSummary = content | safe %}
+
+{# Post list content #}
+{% set postListHeading = postsHeading %}
+{# {% set terms = glossary.terms %} #}
+{% set postListItems = collections.postFeed %}
+
+{# Posts link #}
+{% if postListItems.length < collections.posts.length %}
+  {% set paginationNextText = allPostsText %}
+  {% set paginationNextUrl = '/posts' %}
+{% endif %}
+
+{% block content %}
+  {% include "partials/hero.njk" %}
+
+  <div class="l-stack l-stack--large">
+    {% include "partials/intro.njk" %}
+    {% include "partials/post-list-home.njk" %}
+    {% include "partials/pagination.njk" %}
+  </div>
+
+  {% include "partials/cta.njk" %}
+  {% include "partials/newsletter.njk" %}
+
+  {% include "partials/prismic-cta.njk" %}
+
+  {% include "partials/read-more-cta.njk" %}
+{% endblock %}

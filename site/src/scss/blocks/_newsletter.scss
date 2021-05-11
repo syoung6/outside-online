@@ -1,0 +1,29 @@
+.newsletter {
+  color: whitesmoke;
+  background: #1c2334;
+  font-size: .85rem !important;
+
+  display: grid;
+  place-items: center;
+
+  &__inner {
+    max-width: 50ch;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      // font-size: small;
+    }
+
+    input {
+      color: tomato; //#bb1450
+      background-color: whitesmoke;
+      border-radius: 100px;
+      border: 2px solid tomato;
+      padding: .3rem 1rem;
+    }
+  }
+}

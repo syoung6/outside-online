@@ -1,0 +1,5 @@
+.smol-css-grid {
+  display: grid;
+  grid-gap: var(--gap, 1rem);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min, 15ch), 1fr));
+}

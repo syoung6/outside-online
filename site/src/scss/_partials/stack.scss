@@ -1,0 +1,12 @@
+
+.l-stack {
+  display: block;
+}
+
+.l-stack > * + * {
+  margin-top: var(--stack-size, 1rem);
+}
+
+.l-stack--large > * + * {
+  margin-top: var(--stack-size, 2rem);
+}

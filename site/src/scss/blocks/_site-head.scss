@@ -1,0 +1,41 @@
+.site-head {
+  background: white;
+  padding: 0 0 .5rem 0;
+  border-bottom: .5px solid #ccc;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    flex-shrink: 0;
+    padding: .25rem;
+    margin-inline-end: 1.5rem; // Prevents nav bunching up to the logo
+
+    // Optical adjustment to account for the offset the sunken 3s create
+    transform: translateY(0.25rem);
+
+    img {
+      width: 110px;
+    }
+
+    svg {
+      width: 100px;
+    }
+  }
+
+  &__nav {
+    padding: 0;
+  }
+
+  // @include media-query('md') {
+  //   &__brand {
+  //     svg {
+  //         width: 160px;
+  //       }
+  //     }
+  // }
+}

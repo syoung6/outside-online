@@ -1,0 +1,17 @@
+<article class="read-more">
+  <div class="[ wrapper ] [ flow ]">
+    <div>
+      <h2>{{ glossary.title }}</h2>
+      <hr /> 
+    </div>
+
+    <div class="smol-css-grid">
+      {% for term in glossary.terms %}
+        <div class="[ read-more-post ] [ flow ]">
+          <h4>{{ term.term }}</h4>
+          <p class="read-more-post__author">{{ term.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</article>

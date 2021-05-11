@@ -1,0 +1,77 @@
+.mountains {
+  --stack-size: 0;
+
+  background: var(--primary);
+}
+
+.site-foot {
+  --stack-size: 0;
+
+  color: whitesmoke;
+  background: black;
+  font-size: var(--font-sm);
+  padding: 5rem 0 1.5rem 0;
+  margin-top: -2rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-color: var(--primary);
+    }
+  }
+
+  .link {
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+  }
+
+  &__inner {
+    --gap: 3rem;
+  }
+
+  &__newsletter {
+    --flow-space: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    input {
+      color: whitesmoke;
+      border: 1px solid whitesmoke;
+      padding: .3rem 1rem;
+    }
+
+    small {
+      --flow-space: .5rem;
+    }
+  }
+
+  .site-foot-links {
+    --gap: .2rem;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .site-foot-hr {
+    color: whitesmoke;
+  }
+
+  &__copy {
+    // --auto-grid-min-size: 10rem;
+    // --auto-grid-gap: .5rem;
+
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-end;
+  }
+}
+
+.site-logo {
+  width: 8rem;
+}
